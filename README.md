@@ -42,7 +42,7 @@ class CarAdmin(admin.ModelAdmin):
 ~~~
 
 # OUTPUT
-![alt text](<../Select car to change _ Django site admin - Google Chrome 24-11-2025 20_04_48.png>)
+![alt text](<orm exp rosetta.png>)
 
 
 # RESULT
