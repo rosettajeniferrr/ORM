@@ -15,7 +15,7 @@ Create a new app in Django project
 Enter the code for admin.py and models.py
 
 ## STEP 4:
-Execute Django admin and create details for 10 books
+Execute Django admin and create details for 10 car
 
 # PROGRAM
 ~~~
@@ -35,10 +35,14 @@ class Car(models.Model):
     color = models.CharField(max_length=50)
     mileage = models.FloatField()
 
-admins.py
-
 class CarAdmin(admin.ModelAdmin):
     list_display = ('brand', 'model', 'year', 'price','body_design','drive_type', 'fuel_type','seats','color','mileage')
+
+admins.py
+from django.contrib import admin
+from .models import Car,CarAdmin
+
+admin.site.register(Car,CarAdmin)
 ~~~
 
 # OUTPUT
