@@ -17,8 +17,8 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 car
 
 # PROGRAM
-~~~
 models.py
+```
 from django.db import models
 from django.contrib import admin
 
@@ -36,13 +36,14 @@ class Car(models.Model):
 
 class CarAdmin(admin.ModelAdmin):
     list_display = ('brand', 'model', 'year', 'price','body_design','drive_type', 'fuel_type','seats','color','mileage')
-
+```
 admins.py
+```
 from django.contrib import admin
 from .models import Car,CarAdmin
 
 admin.site.register(Car,CarAdmin)
-~~~
+```
 
 # OUTPUT
 ![alt text](<orm exp rosetta.png>)
